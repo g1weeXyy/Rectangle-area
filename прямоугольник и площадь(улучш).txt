@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Rectangle
+{
+	float lenght;
+	float width;
+	void get_info()
+	{
+		cout << lenght * width << endl;
+	}
+};
+
+int main() {
+	setlocale(LC_ALL, "RU");
+
+	Rectangle H;
+	cout << "float lenght: ";
+	cin >> H.lenght;
+	cout << "float width: ";
+	cin >> H.width;
+	H.get_info();
+
+	return 0;
+}

@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Rectangle {
+private:
+	float lenght;
+	float width;
+public:
+
+	Rectangle(float lenght, float width)
+	{
+		this->lenght = lenght;
+		this->width = width;
+		
+	}
+	void get_info() {
+
+		cout << "lenght: " << lenght << ".width: " << width << endl;
+		cout << "S = " << lenght * width << endl;
+	}
+	~Rectangle()
+	{
+		cout << "Delete object" << endl;
+	}
+};
+
+int main() {
+	setlocale(LC_ALL, "RU");
+
+	Rectangle ABCD(15, 5);
+	ABCD.get_info();
+
+	return 0;
+}
